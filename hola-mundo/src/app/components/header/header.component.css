@@ -1,0 +1,24 @@
+.topmenu {
+    background-color: #777;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.topmenu li {
+    float: left;
+}
+
+.topmenu li a{
+    color: white;
+    text-align: center;
+    padding: 16px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.topmenu li a.active {
+    background-color: #4caf50;
+    color: white;
+}

@@ -1,0 +1,22 @@
+*{
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #2196f3;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.column {
+    float: left;
+    padding: 15px;
+}
+.content {
+    width: 75%;
+}

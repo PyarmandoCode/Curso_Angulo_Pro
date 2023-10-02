@@ -1,0 +1,39 @@
+.images-container {
+    width:90%;
+    text-align:center;
+    margin:60px auto 60px;
+}
+
+.container-enlarge {
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    margin: 15px;
+}
+
+.container-enlarge > img {
+    height: auto;
+    max-width: 100px;
+    width: 150px;
+    border-radius: 5px;
+    
+}
+
+
+
+h1 {
+    text-align: center;
+    margin:30px 15px;
+}
+
+body {
+    background-color: blanchedalmond;
+    margin-bottom: 50px;
+}
+
+.zoom-area {
+    max-width: 290px;
+    margin:50px auto 80px;
+    font-size: 19px;
+    color:#999;
+}
