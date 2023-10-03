@@ -18,30 +18,20 @@
         <div class="form-group">
             <h1 class="text-center text-primary">Lista de Tareas Diarias</h1>
             <div class>
-                <input type="text" class="form-control"
+                <input type="text" #todo class="form-control"
                     placeholder="Agregar Tarea">
-                <span class="input-group-text">Add</span>
+                <span class="input-group-text" (click)="addtodo(todo.value)">Add</span>
             </div>
         </div>
 
         <div class="data" >
             <ul class="list-instyled">
-                <li>
-                    <i >Tarea 1</i>
-                    <i class="material-icons">delete</i>
-                    <i class="material-icons" >done</i>
+                <li *ngFor="let item of mistareas " [class.done]="item.estado=='completado'">
+                    {{item.tarea}}
+                    <i (click)="deleteitem(item.tarea)" class="material-icons">delete</i>
+                    <i (click)="completeitem(item.tarea)" class="material-icons" >done</i>
                 </li>
-                <li>
-                    <i>Tarea 2</i>
-                    <i class="material-icons">delete</i>
-                    <i class="material-icons">done</i>
-                </li>
-                <li>
-                    <i>Tarea 3</i>
-                    <i class="material-icons">delete</i>
-                    <i class="material-icons">done</i>
-                </li>
-
+               
             </ul>
 
         </div>
