@@ -1,6 +1,9 @@
 <div class="card">
     <img  class="image" [src]="dataEntrante.imagen" alt="">
     <div class="wrapper-text">
-        <div class="title">{{dataEntrante.curso}}</div>
+        <div class="title"><b>Curso:</b>{{dataEntrante.curso}}</div>
+        <div class="title"><b>Precio $</b>{{dataEntrante.precio}}</div>
+        <div class="title"><b>Vacantes </b>{{dataEntrante.vacantes}}</div>
+        <a routerLink="/detailcurso/{{dataEntrante.codigo}}" class="btn btn-success">Ir a Detalle</a>
     </div>
 </div>

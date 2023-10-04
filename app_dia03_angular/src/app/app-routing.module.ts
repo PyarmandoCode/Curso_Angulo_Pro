@@ -5,12 +5,15 @@ import { ProgramacionComponent } from './components/programacion/programacion.co
 import { RedesComponent } from './components/redes/redes.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { BasededatosComponent } from './components/basededatos/basededatos.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
+  {path:'inicio',component:HomeComponent},
   {path:'programacion',component:ProgramacionComponent},
   {path:'redes/:id',component:RedesComponent},
   {path:'basededatos',component:BasededatosComponent},
+  {path:'detailcurso/:id',component:DetailComponent},
   {path:'**',component:NotfoundComponent},
 
 ];

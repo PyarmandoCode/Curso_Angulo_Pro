@@ -12,6 +12,7 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
 import { BasededatosComponent } from './components/basededatos/basededatos.component';
 import { SliderbarComponent } from './components/sliderbar/sliderbar.component';
 import { CardComponent } from './components/card/card.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CardComponent } from './components/card/card.component';
     NotfoundComponent,
     BasededatosComponent,
     SliderbarComponent,
-    CardComponent
+    CardComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
