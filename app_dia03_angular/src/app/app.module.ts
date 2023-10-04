@@ -10,6 +10,8 @@ import { ProgramacionComponent } from './components/programacion/programacion.co
 import { RedesComponent } from './components/redes/redes.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { BasededatosComponent } from './components/basededatos/basededatos.component';
+import { SliderbarComponent } from './components/sliderbar/sliderbar.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { BasededatosComponent } from './components/basededatos/basededatos.compo
     ProgramacionComponent,
     RedesComponent,
     NotfoundComponent,
-    BasededatosComponent
+    BasededatosComponent,
+    SliderbarComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

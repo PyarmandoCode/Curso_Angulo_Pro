@@ -5,19 +5,39 @@
     <br>
     <table class="table" *ngIf="listadoEstudiantes.length>0">
         <thead>
-            <th>Nro</th> 
+            <th>Nro</th>
             <th>Nombre</th>
             <th>Estado</th>
         </thead>
         <tbody>
-            <tr *ngFor="let estudiantes of listadoEstudiantes;let i=index ">
+            <tr *ngFor="let estudiantes of listadoEstudiantes;let i=index"
+                [ngSwitch]="estudiantes.estado">
                 <td>{{i+1}}</td>
                 <td>{{estudiantes.nombre}}</td>
-
-
+                <!-- <td [ngStyle]="{'font-style':estudiantes.estado=='Promocionado' ? 'italic':'normal'}">{{estudiantes.estado}}</td> -->
+                <td>
+                    <!-- <span
+                        [ngClass]="estudiantes.estado=='Promocionado' ? 'badge bg bg-success':'badge bg bg-primary'">
+                        {{estudiantes.estado}}
+                    </span> -->
+                    <span *ngSwitchCase="'Promocionado'"
+                        class="badge bg bg-success">
+                        {{estudiantes.estado}}
+                    </span>
+                    <span *ngSwitchCase="'Regular'" class="badge bg bg-primary">
+                        {{estudiantes.estado}}
+                    </span>
+                    <span *ngSwitchCase="'Recursante'" class="badge bg-danger">
+                        {{estudiantes.estado}}
+                    </span>
+                    <span *ngSwitchDefault
+                        class="badge bg bg-warning">
+                        {{estudiantes.estado}}
+                    </span>
+                </td>
             </tr>
         </tbody>
-
+        <h3 *ngIf="listadoEstudiantes.length==0">No Hay Registros que Mostrar</h3>
     </table>
 
 </div>
