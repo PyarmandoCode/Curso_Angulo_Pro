@@ -1,0 +1,32 @@
+.header {
+    width: 100;
+    background-color: rgba(0,0,0,0.849);
+    border-bottom: rgba(0,0,0,0.2); ;
+
+}
+
+.menu {
+    margin: 0px;
+    padding: 40px;
+    list-style: none;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+ul li {
+    color: white;
+    font-size: x-large;
+}
+
+li  ::before {
+    content: "";
+    color: white;
+    margin-right: 22px;
+}
+
+.logo {
+    height: 3rem;
+}

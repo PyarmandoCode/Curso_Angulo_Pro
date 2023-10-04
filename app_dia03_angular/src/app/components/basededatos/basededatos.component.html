@@ -1,0 +1,23 @@
+<div class="container mt-2">
+    <div class="row">
+        <h1>Listado de Estudiantes</h1>
+    </div>
+    <br>
+    <table class="table" *ngIf="listadoEstudiantes.length>0">
+        <thead>
+            <th>Nro</th> 
+            <th>Nombre</th>
+            <th>Estado</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let estudiantes of listadoEstudiantes;let i=index ">
+                <td>{{i+1}}</td>
+                <td>{{estudiantes.nombre}}</td>
+
+
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>
