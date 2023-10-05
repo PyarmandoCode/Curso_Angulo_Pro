@@ -1,28 +1,28 @@
 <app-header></app-header>
-<section style="background-color: #eee;">
+<section style="background-color: #eee;" *ngFor="let cursos of ArregloTarjetas;let i=index" >
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6 col-xl-4">
                 <div class="card text-black">
                     <i class="fab fa-apple fa-lg pt-3 pb-1 px-3"></i>
-                    <img src="{{image}}" class="card-img-top">
+                    <img src="{{cursos.imagen}}" class="card-img-top">
                     <div class="card-body">
                         <div class="text-center">
                             <h5 class="card-title">
-                                Curso de Angular
+                               <b>Curso</b> {{cursos.curso}}
                             </h5>
                             <p class="text-muted mb-4">
-                                Precio del Curso
+                                {{cursos.detalles}}
                             </p>
                         </div>
                         <div class="d-flex justify-content-between">
-                            <span>Vacantes</span>
+                            <span> <b>Precio</b> {{cursos.precio}}</span>
                         </div>
                         <div class="d-flex justify-content-between">
-                            <span>Vacantes</span>
+                            <span> <b>Vacantes</b> {{cursos.vacantes}}</span>
                         </div>
                         <div class="d-flex justify-content-between">
-                            <span>Vacantes</span>
+                            <span><b>Codigo</b>{{id}}</span>
                         </div>
                         <div class="d-flex justify-content-between">
                             <button type="button" class="btn btn-success" (click)="irpaginainicio()">Ir Al
